@@ -9,4 +9,8 @@ const authUpdateSub = Joi.object({
   subscription: Joi.string().required(),
 });
 
-module.exports = { authSchema, authUpdateSub };
+const emailSchema = Joi.object({
+  email: Joi.string().required(),
+});
+
+module.exports = { authSchema, authUpdateSub, emailSchema };
